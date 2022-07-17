@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./img/fav.png" />
+      <title>Exchanger | Home</title>
+      <!-- bootstrap 5 -->
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+      <!-- owl carousel -->
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.carousel.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
+      />
+      <!-- aos animation -->
+      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
+      <!-- fancy box -->
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+      />
+      <!-- font awesome 5 -->
+      <script src="./assets/fontawesome/fontawesomepro.js"></script>
+      <!-- custom css -->
+      <link rel="stylesheet" href="./scss/style.css" />
+   </head>
+   <body>
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Exchanger.</a>
+            <button
+               class="navbar-toggler p-0"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav mx-lg-auto">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">Buy crypto</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">Sell crypto</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">blogs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="">contact</a>
+                  </li>
+               </ul>
+            </div>
+            <span class="navbar-text">
+               <button class="wallet btn-ico">
+                  <i class="fal fa-wallet"></i> wallet
+               </button>
+               <!-- notification panel -->
+               <div class="notification-panel">
+                  <button class="dropdown-toggle">
+                     <i class="fal fa-bell"></i>
+                  </button>
+                  <ul class="notification-dropdown">
+                     <div class="dropdown-box">
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="clear-all fixed-bottom">
+                        <a href="">Clear all</a>
+                     </div>
+                  </ul>
+               </div>
+
+               <a href="user-panel.html" class="profile">
+                  <img src="./img/owner/creator.jpg" class="img-fluid" alt="" />
+               </a>
+            </span>
+         </div>
+      </nav>
+
+      <!-- home section -->
+      <section class="home-section">
+         <div class="container h-100 pt-5">
+            <div class="row h-100 g-5 align-items-center">
+               <div class="col-lg-6">
+                  <div class="text-box">
+                     <h5>
+                        <img src="./img/icon/lightning.png" alt="" />first offer
+                        GET 25% OFF NOW
+                     </h5>
+                     <h1>
+                        Trusted & secure <br />
+                        crypto exchange
+                     </h1>
+                     <p>
+                        Trade Bitcoin, Ethereum, USDT and other altcoins using
+                        our crypto trading app.
+                     </p>
+                     <button class="btn-ico">get started</button>
+                  </div>
+               </div>
+               <div class="col-lg-1"></div>
+               <div class="col-lg-5">
+                  <div class="exchange-box">
+                     <div class="row g-3">
+                        <div class="col-12">
+                           <h5 class="mb-0">Send</h5>
+                        </div>
+                        <div class="input-field col-6">
+                           <input
+                              type="text"
+                              class="form-control"
+                              placeholder="1"
+                           />
+                        </div>
+                        <div class="input-field col-6">
+                           <select class="form-select">
+                              <option selected>BTC</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                           </select>
+                        </div>
+                        <div class="col-12">
+                           <h5 class="mb-0">Receive</h5>
+                        </div>
+                        <div class="input-field col-6">
+                           <input
+                              type="text"
+                              class="form-control"
+                              placeholder="89.00"
+                           />
+                        </div>
+                        <div class="input-field col-6">
+                           <select class="form-select">
+                              <option selected>ETH</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                           </select>
+                        </div>
+                        <div class="col-12">
+                           <span>Exchange rate: 1 USD = 89 BDT</span>
+                           <span class="float-end">Reserve: 45431.85 BDT</span>
+                        </div>
+                        <div class="col-12">
+                           <button class="btn-ico">exchange</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- how it works -->
+      <section class="how-it-works">
+         <div class="container">
+            <div class="row">
+               <div class="header-text mb-5 text-center">
+                  <h5>working process</h5>
+                  <h2>how it works</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Atque accusantium, quaerat perferendis consectetur.
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="box">
+                     <div class="icon">
+                        <img
+                           class="img-fluid"
+                           src="./img/icon/connect-wallet.png"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text">
+                        <span>step 1</span>
+                        <h5>Connect Wallet</h5>
+                        <p>
+                           A Production-Ready Library Of Stackable Content
+                           Blocks Built In React Native.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box">
+                     <div class="icon">
+                        <img
+                           class="img-fluid"
+                           src="./img/icon/create-collection.png"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text">
+                        <span>step 2</span>
+                        <h5>Start Trading</h5>
+                        <p>
+                           A Production-Ready Library Of Stackable Content
+                           Blocks Built In React Native.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box">
+                     <div class="icon">
+                        <img
+                           class="img-fluid"
+                           src="./img/icon/list-icon.png"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text">
+                        <span>step 3</span>
+                        <h5>Earn Money</h5>
+                        <p>
+                           A Production-Ready Library Of Stackable Content
+                           Blocks Built In React Native.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- latest exchanges -->
+      <section class="latest-exchanges">
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="header-text mb-5 text-center">
+                     <h5>top 10</h5>
+                     <h2>latest exchanges</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col">
+                  <div class="table-parent table-responsive">
+                     <table class="table table-striped">
+                        <thead>
+                           <tr>
+                              <th scope="col">SL</th>
+                              <th scope="col">Username</th>
+                              <th scope="col">Send</th>
+                              <th scope="col">Receive</th>
+                              <th scope="col">Amount</th>
+                              <th scope="col">Exchange ID</th>
+                              <th scope="col">Status</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>01</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-success"
+                                    >Processed</span
+                                 >
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>02</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-warning"
+                                    >Waiting</span
+                                 >
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>03</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-danger">Waiting</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>04</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-warning"
+                                    >Waiting</span
+                                 >
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>05</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-danger">Waiting</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>06</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-success"
+                                    >Processed</span
+                                 >
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>07</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-warning"
+                                    >Waiting</span
+                                 >
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>08</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-danger">Waiting</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>09</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-warning"
+                                    >Waiting</span
+                                 >
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>10</td>
+                              <td>shamshera23</td>
+                              <td>BTC</td>
+                              <td>ETH</td>
+                              <td>2.50 USD</td>
+                              <td>5B0513FA9288***</td>
+                              <td>
+                                 <span class="badge badge-danger">Waiting</span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <!-- <div class="row mt-5">
+               <div class="col">
+                  <nav aria-label="Page navigation example">
+                     <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                           <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                           <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                           <a class="page-link" href="#">Next</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div> -->
+         </div>
+      </section>
+
+      <!-- testimonial section -->
+      <section class="testimonial-section">
+         <div class="container">
+            <div class="row">
+               <div class="header-text mb-5 text-center">
+                  <h5>testimonial</h5>
+                  <h2>what clients say</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Atque accusantium, quaerat perferendis consectetur.
+                  </p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="owl-carousel testimonials">
+                     <div class="review-box">
+                        <div class="rating">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                        </div>
+                        <p>
+                           “Great! This is one of the best apps I have ever used
+                           before.”
+                        </p>
+                        <div
+                           class="d-flex align-items-end justify-content-between"
+                        >
+                           <div>
+                              <h5>Adam Watson</h5>
+                              <span class="title">Designer</span>
+                           </div>
+                           <div>
+                              <img
+                                 class="img-fluid"
+                                 src="./img/owner/creator1.jpg"
+                                 alt=""
+                              />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="review-box">
+                        <div class="rating">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                        </div>
+                        <p>
+                           “Great! This is one of the best apps I have ever used
+                           before.”
+                        </p>
+                        <div
+                           class="d-flex align-items-end justify-content-between"
+                        >
+                           <div>
+                              <h5>Adam Watson</h5>
+                              <span class="title">Designer</span>
+                           </div>
+                           <div>
+                              <img
+                                 class="img-fluid"
+                                 src="./img/owner/creator2.jpg"
+                                 alt=""
+                              />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="review-box">
+                        <div class="rating">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                        </div>
+                        <p>
+                           “Great! This is one of the best apps I have ever used
+                           before.”
+                        </p>
+                        <div
+                           class="d-flex align-items-end justify-content-between"
+                        >
+                           <div>
+                              <h5>Adam Watson</h5>
+                              <span class="title">Designer</span>
+                           </div>
+                           <div>
+                              <img
+                                 class="img-fluid"
+                                 src="./img/owner/creator3.jpg"
+                                 alt=""
+                              />
+                           </div>
+                        </div>
+                     </div>
+                     <div class="review-box">
+                        <div class="rating">
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                           <i class="fas fa-star"></i>
+                        </div>
+                        <p>
+                           “Great! This is one of the best apps I have ever used
+                           before.”
+                        </p>
+                        <div
+                           class="d-flex align-items-end justify-content-between"
+                        >
+                           <div>
+                              <h5>Adam Watson</h5>
+                              <span class="title">Designer</span>
+                           </div>
+                           <div>
+                              <img
+                                 class="img-fluid"
+                                 src="./img/owner/creator4.jpg"
+                                 alt=""
+                              />
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- blog section -->
+      <div class="blog-section">
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="header-text mb-5 text-center">
+                     <h5>our blogs</h5>
+                     <h2>Latest News Update</h2>
+                     <p>
+                        Here are a few reasons why you should choose Oction for
+                        sell your NFT
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-4 col-md-6 mx-auto">
+                  <div class="box">
+                     <div class="img-box">
+                        <img
+                           src="./img/blog/blog3.jpg"
+                           class="img-fluid"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <span class="category">Learn and earn</span>
+                        <a href="blog.html" class="title">
+                           Learn about UI8 coin and earn an All-Access Pass
+                        </a>
+                        <div class="date-author">
+                           <span class="author">
+                              <i class="fas fa-dot-circle"></i>Moderator
+                           </span>
+                           <span class="float-end">20 January 2021</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 mx-auto">
+                  <div class="box">
+                     <div class="img-box">
+                        <img
+                           src="./img/blog/blog3.jpg"
+                           class="img-fluid"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <span class="category">Learn and earn</span>
+                        <a href="blog.html" class="title">
+                           Learn about UI8 coin and earn an All-Access Pass
+                        </a>
+                        <div class="date-author">
+                           <span class="author">
+                              <i class="fas fa-dot-circle"></i>Moderator
+                           </span>
+                           <span class="float-end">20 January 2021</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 mx-auto">
+                  <div class="box">
+                     <div class="img-box">
+                        <img
+                           src="./img/blog/blog3.jpg"
+                           class="img-fluid"
+                           alt=""
+                        />
+                     </div>
+                     <div class="text-box">
+                        <span class="category">Learn and earn</span>
+                        <a href="blog.html" class="title">
+                           Learn about UI8 coin and earn an All-Access Pass
+                        </a>
+                        <div class="date-author">
+                           <span class="author">
+                              <i class="fas fa-dot-circle"></i>Moderator
+                           </span>
+                           <span class="float-end">20 January 2021</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- footer section -->
+      <footer class="footer-section">
+         <div class="container">
+            <div class="row gy-5 g-md-5">
+               <div class="col-lg-3 col-md-6">
+                  <div class="box box1">
+                     <a class="navbar-brand" href="index.html">Exchanger.</a>
+                     <p>
+                        Lorem ipsum dolor sit amet Quis non, <br />
+                        consectetur adipisicing elit.<br />
+                        Fugit totam vel laboriosam vitae.
+                     </p>
+                     <div class="social-links">
+                        <a href="facebook.com">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-youtube"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 ps-lg-5">
+                  <div class="box">
+                     <h5>useful links</h5>
+                     <ul class="links">
+                        <li><a href="">All NFTs</a></li>
+                        <li><a href="">How It Works</a></li>
+                        <li><a href="">Create</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">Privacy & Terms</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="box">
+                     <h5>Community</h5>
+                     <ul class="links">
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Partners</a></li>
+                        <li><a href="">Suggestions</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Newsletter</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="box">
+                     <h5>subscribe newsletter</h5>
+                     <div class="input-group">
+                        <input
+                           type="email"
+                           class="form-control"
+                           placeholder="Enter email"
+                        />
+                        <button><i class="fal fa-paper-plane"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row copyright">
+               <div class="col-md-6">
+                  <span>
+                     All rights reserved © 2022 by<a href="">Bug Finder</a>
+                  </span>
+               </div>
+               <div class="col-md-6 text-end">
+                  <a href="" class="language">Bengali</a>
+                  <a href="" class="language">English</a>
+                  <a href="" class="language">Spanish</a>
+                  <a href="" class="language">German</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- bootstrap -->
+      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
+      <!-- jquery cdn -->
+      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- owl carousel -->
+      <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+      <!-- counter up -->
+      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
+      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
+      <!-- aos animation -->
+      <script src="./assets/plugins/aos/aos.js"></script>
+      <!-- fancy box -->
+      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- custom script -->
+      <script src="./js/script.js"></script>
+   </body>
+</html>
