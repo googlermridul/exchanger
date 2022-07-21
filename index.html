@@ -30,7 +30,18 @@
       <!-- custom css -->
       <link rel="stylesheet" href="./scss/style.css" />
    </head>
-   <body>
+   <body class="rtl">
+      <div id="preloader">
+         <div class="loader__image">
+            <div class="loader__coin">
+               <img src="./img/icon/loader-coin.png" alt="" />
+            </div>
+            <div class="loader__hand">
+               <img src="./img/icon/loader-hand.png" alt="" />
+            </div>
+         </div>
+      </div>
+
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container-fluid">
@@ -52,25 +63,30 @@
                      <a class="nav-link active" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="">Buy crypto</a>
+                     <a class="nav-link" href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="">Sell crypto</a>
+                     <a class="nav-link" href="exchange-rate.html"
+                        >Exchange rate</a
+                     >
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="">FAQ</a>
+                     <a class="nav-link" href="reserve.html">Bank Reserve</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="">blogs</a>
+                     <a class="nav-link" href="faq.html">FAQ</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="">contact</a>
+                     <a class="nav-link" href="blog.html">blogs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">contact</a>
                   </li>
                </ul>
             </div>
             <span class="navbar-text">
                <button class="wallet btn-ico">
-                  <i class="fal fa-wallet"></i> wallet
+                  <i class="fal fa-wallet"></i> <span>wallet</span>
                </button>
                <!-- notification panel -->
                <div class="notification-panel">
@@ -131,7 +147,7 @@
                   </ul>
                </div>
 
-               <a href="user-panel.html" class="profile">
+               <a href="user-profile.html" class="profile">
                   <img src="./img/owner/creator.jpg" class="img-fluid" alt="" />
                </a>
             </span>
@@ -141,7 +157,9 @@
       <!-- home section -->
       <section class="home-section">
          <div class="container h-100 pt-5">
-            <div class="row h-100 g-5 align-items-center">
+            <div
+               class="row h-100 gx-4 gy-5 g-lg-5 align-items-center justify-content-between"
+            >
                <div class="col-lg-6">
                   <div class="text-box">
                      <h5>
@@ -159,21 +177,20 @@
                      <button class="btn-ico">get started</button>
                   </div>
                </div>
-               <div class="col-lg-1"></div>
-               <div class="col-lg-5">
+               <div class="col-lg-5 ps-lg-5">
                   <div class="exchange-box">
                      <div class="row g-3">
                         <div class="col-12">
                            <h5 class="mb-0">Send</h5>
                         </div>
-                        <div class="input-field col-6">
+                        <div class="input-box col-6">
                            <input
                               type="text"
                               class="form-control"
                               placeholder="1"
                            />
                         </div>
-                        <div class="input-field col-6">
+                        <div class="input-box col-6">
                            <select class="form-select">
                               <option selected>BTC</option>
                               <option value="1">One</option>
@@ -184,14 +201,14 @@
                         <div class="col-12">
                            <h5 class="mb-0">Receive</h5>
                         </div>
-                        <div class="input-field col-6">
+                        <div class="input-box col-6">
                            <input
                               type="text"
                               class="form-control"
                               placeholder="89.00"
                            />
                         </div>
-                        <div class="input-field col-6">
+                        <div class="input-box col-6">
                            <select class="form-select">
                               <option selected>ETH</option>
                               <option value="1">One</option>
@@ -200,8 +217,10 @@
                            </select>
                         </div>
                         <div class="col-12">
-                           <span>Exchange rate: 1 USD = 89 BDT</span>
-                           <span class="float-end">Reserve: 45431.85 BDT</span>
+                           <div class="d-flex justify-content-between">
+                              <span>Exchange rate: 1 USD = 89 BDT</span>
+                              <span>Reserve: 45431.85 BDT</span>
+                           </div>
                         </div>
                         <div class="col-12">
                            <button class="btn-ico">exchange</button>
@@ -226,13 +245,13 @@
                   </p>
                </div>
             </div>
-            <div class="row">
-               <div class="col-md-4">
+            <div class="row g-4">
+               <div class="col-md-6 col-lg-4">
                   <div class="box">
                      <div class="icon">
                         <img
                            class="img-fluid"
-                           src="./img/icon/connect-wallet.png"
+                           src="./img/icon/cloud.png"
                            alt=""
                         />
                      </div>
@@ -246,12 +265,12 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-4">
+               <div class="col-md-6 col-lg-4">
                   <div class="box">
                      <div class="icon">
                         <img
                            class="img-fluid"
-                           src="./img/icon/create-collection.png"
+                           src="./img/icon/wallet.png"
                            alt=""
                         />
                      </div>
@@ -265,12 +284,12 @@
                      </div>
                   </div>
                </div>
-               <div class="col-md-4">
+               <div class="col-md-6 col-lg-4 mx-auto">
                   <div class="box">
                      <div class="icon">
                         <img
                            class="img-fluid"
-                           src="./img/icon/list-icon.png"
+                           src="./img/icon/mining.png"
                            alt=""
                         />
                      </div>
@@ -287,6 +306,52 @@
             </div>
          </div>
       </section>
+
+      <!-- about section -->
+      <div class="about-section">
+         <div class="container">
+            <div class="row">
+               <div class="header-text mb-5 text-center">
+                  <h5>know more</h5>
+                  <h2>about us</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Atque accusantium, quaerat perferendis consectetur.
+                  </p>
+               </div>
+            </div>
+            <div class="row gy-5 g-md-5 align-items-center">
+               <div class="col-lg-6">
+                  <div class="img-box">
+                     <img src="./img/about.png" alt="" class="img-fluid" />
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Quidem, culpa explicabo, quisquam quasi blanditiis adipisci
+                     reiciendis ex incidunt similique facilis nesciunt porro.
+                     <br />
+                     <br />
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Odit illo illum vero saepe. Quasi, fugit facere? Expedita,
+                     laborum voluptates ipsa voluptatibus eligendi consequatur
+                     architecto provident minus atque, vitae excepturi
+                     praesentium. Lorem ipsum dolor, sit amet consectetur
+                     adipisicing elit. Odit illo illum vero saepe. Quasi, fugit
+                     facere? Expedita, laborum voluptates ipsa voluptatibus
+                     eligendi consequatur architecto provident minus atque,
+                     vitae excepturi praesentium. <br /><br />
+                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Minima pariatur qui eaque aliquam doloremque ducimus fugit
+                     minus ut quasi neque iste modi error facere incidunt
+                     corporis, quas eum sit repellat.
+                  </p>
+                  <button class="btn-ico mt-3">learn more</button>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <!-- latest exchanges -->
       <section class="latest-exchanges">
@@ -318,8 +383,24 @@
                            <tr>
                               <td>01</td>
                               <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
+                              <td>
+                                 <span class="currency">
+                                    <img
+                                       src="./img/crypto/bitcoin.png"
+                                       alt=""
+                                    />
+                                    BTC
+                                 </span>
+                              </td>
+                              <td>
+                                 <span class="currency">
+                                    <img
+                                       src="./img/crypto/ethereum.png"
+                                       alt=""
+                                    />
+                                    ETH
+                                 </span>
+                              </td>
                               <td>2.50 USD</td>
                               <td>5B0513FA9288***</td>
                               <td>
@@ -330,57 +411,80 @@
                            </tr>
                            <tr>
                               <td>02</td>
-                              <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
-                              <td>2.50 USD</td>
+                              <td>asahiq4</td>
+                              <td>
+                                 <span class="currency">
+                                    <img
+                                       src="./img/crypto/litecoin.png"
+                                       alt=""
+                                    />
+                                    LITE
+                                 </span>
+                              </td>
+                              <td>
+                                 <span class="currency">
+                                    <img
+                                       src="./img/crypto/dogecoin.png"
+                                       alt=""
+                                    />
+                                    DOGE
+                                 </span>
+                              </td>
+                              <td>5.30 USD</td>
                               <td>5B0513FA9288***</td>
                               <td>
-                                 <span class="badge badge-warning"
-                                    >Waiting</span
+                                 <span class="badge badge-danger"
+                                    >cancelled</span
                                  >
                               </td>
                            </tr>
                            <tr>
                               <td>03</td>
-                              <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
-                              <td>2.50 USD</td>
+                              <td>monarch324</td>
+                              <td>
+                                 <span class="currency">
+                                    <img
+                                       src="./img/crypto/xrpcoin.png"
+                                       alt=""
+                                    />
+                                    XRP
+                                 </span>
+                              </td>
+                              <td>
+                                 <span class="currency">
+                                    <img src="./img/crypto/tether.png" alt="" />
+                                    TETHER
+                                 </span>
+                              </td>
+                              <td>5.30 USD</td>
                               <td>5B0513FA9288***</td>
                               <td>
-                                 <span class="badge badge-danger">Waiting</span>
+                                 <span class="badge badge-warning"
+                                    >pending</span
+                                 >
                               </td>
                            </tr>
                            <tr>
                               <td>04</td>
                               <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
-                              <td>2.50 USD</td>
-                              <td>5B0513FA9288***</td>
                               <td>
-                                 <span class="badge badge-warning"
-                                    >Waiting</span
-                                 >
+                                 <span class="currency">
+                                    <img
+                                       src="./img/crypto/binance.png"
+                                       alt=""
+                                    />
+                                    BINANCE
+                                 </span>
                               </td>
-                           </tr>
-                           <tr>
-                              <td>05</td>
-                              <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
-                              <td>2.50 USD</td>
-                              <td>5B0513FA9288***</td>
                               <td>
-                                 <span class="badge badge-danger">Waiting</span>
+                                 <span class="currency">
+                                    <img
+                                       src="./img/crypto/polygon.png"
+                                       alt=""
+                                    />
+                                    POLYGON
+                                 </span>
                               </td>
-                           </tr>
-                           <tr>
-                              <td>06</td>
-                              <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
                               <td>2.50 USD</td>
                               <td>5B0513FA9288***</td>
                               <td>
@@ -390,51 +494,29 @@
                               </td>
                            </tr>
                            <tr>
-                              <td>07</td>
-                              <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
-                              <td>2.50 USD</td>
+                              <td>05</td>
+                              <td>asahiq4</td>
+                              <td>
+                                 <span class="currency">
+                                    <img
+                                       src="./img/crypto/polkadot.png"
+                                       alt=""
+                                    />
+                                    POLKADOT
+                                 </span>
+                              </td>
+                              <td>
+                                 <span class="currency">
+                                    <img src="./img/crypto/solana.png" alt="" />
+                                    SOLANA
+                                 </span>
+                              </td>
+                              <td>5.30 USD</td>
                               <td>5B0513FA9288***</td>
                               <td>
-                                 <span class="badge badge-warning"
-                                    >Waiting</span
+                                 <span class="badge badge-danger"
+                                    >cancelled</span
                                  >
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>08</td>
-                              <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
-                              <td>2.50 USD</td>
-                              <td>5B0513FA9288***</td>
-                              <td>
-                                 <span class="badge badge-danger">Waiting</span>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>09</td>
-                              <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
-                              <td>2.50 USD</td>
-                              <td>5B0513FA9288***</td>
-                              <td>
-                                 <span class="badge badge-warning"
-                                    >Waiting</span
-                                 >
-                              </td>
-                           </tr>
-                           <tr>
-                              <td>10</td>
-                              <td>shamshera23</td>
-                              <td>BTC</td>
-                              <td>ETH</td>
-                              <td>2.50 USD</td>
-                              <td>5B0513FA9288***</td>
-                              <td>
-                                 <span class="badge badge-danger">Waiting</span>
                               </td>
                            </tr>
                         </tbody>
@@ -467,6 +549,132 @@
             </div> -->
          </div>
       </section>
+
+      <!-- faq section -->
+      <div class="faq-section">
+         <div class="container">
+            <div class="row">
+               <div class="header-text mb-5 text-center">
+                  <h5>Faqs</h5>
+                  <h2>frequently asked questions</h2>
+                  <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Atque accusantium, quaerat perferendis consectetur.
+                  </p>
+               </div>
+            </div>
+            <div class="row gy-5 g-md-5 align-items-end">
+               <div class="col-lg-6">
+                  <div class="img-box">
+                     <img src="./img/faq.png" alt="" class="img-fluid" />
+                  </div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="accordion" id="accordionExample">
+                     <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingOne">
+                           <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                           >
+                              What does NFT stand mean?
+                           </button>
+                        </h5>
+                        <div
+                           id="collapseOne"
+                           class="accordion-collapse collapse show"
+                           aria-labelledby="headingOne"
+                           data-bs-parent="#accordionExample"
+                        >
+                           <div class="accordion-body">
+                              This is the first item's accordion body. It is
+                              shown by default, until the collapse plugin adds
+                              the appropriate classes that we use to style each
+                              element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the accordion-body though the
+                              transition does limit overflow.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingTwo">
+                           <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                           >
+                              What is the point of NFT?
+                           </button>
+                        </h5>
+                        <div
+                           id="collapseTwo"
+                           class="accordion-collapse collapse"
+                           aria-labelledby="headingTwo"
+                           data-bs-parent="#accordionExample"
+                        >
+                           <div class="accordion-body">
+                              This is the second item's accordion body. It is
+                              hidden by default, until the collapse plugin adds
+                              the appropriate classes that we use to style each
+                              element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the accordion-body though the
+                              transition does limit overflow.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingThree">
+                           <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                           >
+                              What does it mean to buy a NFT?
+                           </button>
+                        </h5>
+                        <div
+                           id="collapseThree"
+                           class="accordion-collapse collapse"
+                           aria-labelledby="headingThree"
+                           data-bs-parent="#accordionExample"
+                        >
+                           <div class="accordion-body">
+                              This is the third item's accordion body. It is
+                              hidden by default, until the collapse plugin adds
+                              the appropriate classes that we use to style each
+                              element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the accordion-body though the
+                              transition does limit overflow.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <!-- testimonial section -->
       <section class="testimonial-section">
@@ -629,7 +837,7 @@
                      </div>
                      <div class="text-box">
                         <span class="category">Learn and earn</span>
-                        <a href="blog.html" class="title">
+                        <a href="blog-details.html" class="title">
                            Learn about UI8 coin and earn an All-Access Pass
                         </a>
                         <div class="date-author">
@@ -645,14 +853,14 @@
                   <div class="box">
                      <div class="img-box">
                         <img
-                           src="./img/blog/blog3.jpg"
+                           src="./img/blog/blog2.jpg"
                            class="img-fluid"
                            alt=""
                         />
                      </div>
                      <div class="text-box">
                         <span class="category">Learn and earn</span>
-                        <a href="blog.html" class="title">
+                        <a href="blog-details.html" class="title">
                            Learn about UI8 coin and earn an All-Access Pass
                         </a>
                         <div class="date-author">
@@ -668,14 +876,14 @@
                   <div class="box">
                      <div class="img-box">
                         <img
-                           src="./img/blog/blog3.jpg"
+                           src="./img/blog/blog1.jpg"
                            class="img-fluid"
                            alt=""
                         />
                      </div>
                      <div class="text-box">
                         <span class="category">Learn and earn</span>
-                        <a href="blog.html" class="title">
+                        <a href="blog-details.html" class="title">
                            Learn about UI8 coin and earn an All-Access Pass
                         </a>
                         <div class="date-author">
@@ -757,13 +965,13 @@
                   </div>
                </div>
             </div>
-            <div class="row copyright">
-               <div class="col-md-6">
+            <div class="d-flex copyright justify-content-between">
+               <div>
                   <span>
                      All rights reserved © 2022 by<a href="">Bug Finder</a>
                   </span>
                </div>
-               <div class="col-md-6 text-end">
+               <div>
                   <a href="" class="language">Bengali</a>
                   <a href="" class="language">English</a>
                   <a href="" class="language">Spanish</a>
@@ -772,6 +980,11 @@
             </div>
          </div>
       </footer>
+
+      <!-- arrow up -->
+      <a href="#" class="scroll-up">
+         <i class="fal fa-chevron-double-up"></i>
+      </a>
 
       <!-- bootstrap -->
       <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/x-icon" href="./img/fav.png" />
+      <title>Exchanger | Profile</title>
+      <!-- bootstrap 5 -->
+      <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
+      <!-- owl carousel -->
+      <link rel="stylesheet" href="./assets/plugins/owlcarousel/animate.css" />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.carousel.min.css"
+      />
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/owlcarousel/owl.theme.default.min.css"
+      />
+      <!-- aos animation -->
+      <link rel="stylesheet" href="./assets/plugins/aos/aos.css" />
+      <!-- fancy box -->
+      <link
+         rel="stylesheet"
+         href="./assets/plugins/fancybox/jquery.fancybox.min.css"
+      />
+      <!-- font awesome 5 -->
+      <script src="./assets/fontawesome/fontawesomepro.js"></script>
+      <!-- custom css -->
+      <link rel="stylesheet" href="./scss/style.css" />
+   </head>
+   <body class="rtl">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Exchanger.</a>
+            <button
+               class="navbar-toggler p-0"
+               type="button"
+               data-bs-toggle="collapse"
+               data-bs-target="#navbarNav"
+               aria-controls="navbarNav"
+               aria-expanded="false"
+               aria-label="Toggle navigation"
+            >
+               <i class="fal fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav mx-lg-auto">
+                  <li class="nav-item">
+                     <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="exchange-rate.html"
+                        >Exchange rate</a
+                     >
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="reserve.html">Bank Reserve</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="blog.html">blogs</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">contact</a>
+                  </li>
+               </ul>
+            </div>
+            <span class="navbar-text">
+               <button class="wallet btn-ico">
+                  <i class="fal fa-wallet"></i> <span>wallet</span>
+               </button>
+               <!-- notification panel -->
+               <div class="notification-panel">
+                  <button class="dropdown-toggle">
+                     <i class="fal fa-bell"></i>
+                  </button>
+                  <ul class="notification-dropdown">
+                     <div class="dropdown-box">
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" href="#">
+                              <i class="fal fa-bell"></i>
+                              <div>
+                                 <p>Notification</p>
+                                 <span>Lorem ipsum dolor sit amet.</span>
+                              </div>
+                           </a>
+                        </li>
+                     </div>
+                     <div class="clear-all fixed-bottom">
+                        <a href="">Clear all</a>
+                     </div>
+                  </ul>
+               </div>
+
+               <a href="user-profile.html" class="profile">
+                  <img src="./img/owner/creator.jpg" class="img-fluid" alt="" />
+               </a>
+            </span>
+         </div>
+      </nav>
+
+      <!-- banner -->
+      <section class="banner">
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="header-text text-center">
+                     <h2>User Profile</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- user profile -->
+      <section class="user-profile">
+         <div class="container">
+            <div class="row gy-5 g-lg-5">
+               <div class="col-lg-4">
+                  <div class="sidebar-wrapper">
+                     <div class="profile">
+                        <div class="img">
+                           <img
+                              id="profile"
+                              src="./img/owner/creator1.jpg"
+                              alt=""
+                              class="img-fluid"
+                           />
+                           <button class="upload-img">
+                              <i class="fal fa-camera"></i>
+                              <input
+                                 class="form-control"
+                                 accept="image/*"
+                                 type="file"
+                                 onchange="previewImage('profile')"
+                              />
+                           </button>
+                        </div>
+                        <div>
+                           <h5 class="name">
+                              Trista Francis
+                              <i
+                                 class="fas fa-check-circle"
+                                 aria-hidden="true"
+                              ></i>
+                           </h5>
+                           <span>@Kalla.ban</span>
+                        </div>
+                     </div>
+                     <div class="sidebar">
+                        <a href="user-profile.html">
+                           <i class="fal fa-user"></i>Personal info
+                        </a>
+                        <a href="my-orders.html" class="active">
+                           <i class="fal fa-usd-circle"></i>my orders
+                        </a>
+                        <a href="">
+                           <i class="fal fa-sliders-h"></i>Account Setting
+                        </a>
+                        <a href="">
+                           <i class="fal fa-wallet"></i>Wallet info
+                        </a>
+                        <a href="">
+                           <i class="fal fa-key"></i>change password
+                        </a>
+                        <a href="">
+                           <i class="fal fa-badge-check"></i>verify account
+                        </a>
+                        <a href="">
+                           <i class="fal fa-sign-out-alt"></i>Sign out
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8">
+                  <div class="track-exchange mb-5">
+                     <form action="">
+                        <div class="row g-4">
+                           <div class="input-box col-md-6">
+                              <label for="">track exchange</label>
+                              <input
+                                 class="form-control"
+                                 type="text"
+                                 placeholder="HLAKSJDFKLJL453"
+                              />
+                           </div>
+                           <div class="input-box col-12">
+                              <button class="btn-ico">track</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="latest-exchanges py-0">
+                     <div class="table-parent table-responsive">
+                        <table class="table table-striped">
+                           <thead>
+                              <tr>
+                                 <th scope="col">SL</th>
+                                 <th scope="col">Username</th>
+                                 <th scope="col">Send</th>
+                                 <th scope="col">Receive</th>
+                                 <th scope="col">Amount</th>
+                                 <th scope="col">Status</th>
+                                 <th scope="col">Action</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>01</td>
+                                 <td>shamshera23</td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/bitcoin.png"
+                                          alt=""
+                                       />
+                                       BTC
+                                    </span>
+                                 </td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/ethereum.png"
+                                          alt=""
+                                       />
+                                       ETH
+                                    </span>
+                                 </td>
+                                 <td>2.50 USD</td>
+                                 <td>
+                                    <span class="badge badge-success"
+                                       >Processed</span
+                                    >
+                                 </td>
+                                 <td class="action">
+                                    <div class="d-flex">
+                                       <button
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#editModal"
+                                       >
+                                          <i class="fal fa-pencil"></i>
+                                       </button>
+                                       <button>
+                                          <i class="fal fa-ban"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>02</td>
+                                 <td>asahiq4</td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/litecoin.png"
+                                          alt=""
+                                       />
+                                       LITE
+                                    </span>
+                                 </td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/dogecoin.png"
+                                          alt=""
+                                       />
+                                       DOGE
+                                    </span>
+                                 </td>
+                                 <td>5.30 USD</td>
+                                 <td>
+                                    <span class="badge badge-danger"
+                                       >cancelled</span
+                                    >
+                                 </td>
+
+                                 <td class="action">
+                                    <div class="d-flex">
+                                       <button
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#editModal"
+                                       >
+                                          <i class="fal fa-pencil"></i>
+                                       </button>
+                                       <button>
+                                          <i class="fal fa-ban"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>03</td>
+                                 <td>monarch324</td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/xrpcoin.png"
+                                          alt=""
+                                       />
+                                       XRP
+                                    </span>
+                                 </td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/tether.png"
+                                          alt=""
+                                       />
+                                       TETHER
+                                    </span>
+                                 </td>
+                                 <td>5.30 USD</td>
+                                 <td>
+                                    <span class="badge badge-warning"
+                                       >pending</span
+                                    >
+                                 </td>
+
+                                 <td class="action">
+                                    <div class="d-flex">
+                                       <button
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#editModal"
+                                       >
+                                          <i class="fal fa-pencil"></i>
+                                       </button>
+                                       <button>
+                                          <i class="fal fa-ban"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>04</td>
+                                 <td>shamshera23</td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/binance.png"
+                                          alt=""
+                                       />
+                                       BINANCE
+                                    </span>
+                                 </td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/polygon.png"
+                                          alt=""
+                                       />
+                                       POLYGON
+                                    </span>
+                                 </td>
+                                 <td>2.50 USD</td>
+                                 <td>
+                                    <span class="badge badge-success"
+                                       >Processed</span
+                                    >
+                                 </td>
+
+                                 <td class="action">
+                                    <div class="d-flex">
+                                       <button
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#editModal"
+                                       >
+                                          <i class="fal fa-pencil"></i>
+                                       </button>
+                                       <button>
+                                          <i class="fal fa-ban"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>05</td>
+                                 <td>asahiq4</td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/polkadot.png"
+                                          alt=""
+                                       />
+                                       POLKADOT
+                                    </span>
+                                 </td>
+                                 <td>
+                                    <span class="currency">
+                                       <img
+                                          src="./img/crypto/solana.png"
+                                          alt=""
+                                       />
+                                       SOLANA
+                                    </span>
+                                 </td>
+                                 <td>5.30 USD</td>
+                                 <td>
+                                    <span class="badge badge-danger"
+                                       >cancelled</span
+                                    >
+                                 </td>
+
+                                 <td class="action">
+                                    <div class="d-flex">
+                                       <button
+                                          data-bs-toggle="modal"
+                                          data-bs-target="#editModal"
+                                       >
+                                          <i class="fal fa-pencil"></i>
+                                       </button>
+                                       <button>
+                                          <i class="fal fa-ban"></i>
+                                       </button>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Modal -->
+      <div
+         class="modal fade"
+         id="editModal"
+         tabindex="-1"
+         aria-labelledby="editModalLabel"
+         aria-hidden="true"
+      >
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="editModalLabel">Modal title</h5>
+                  <button
+                     type="button"
+                     class="close-btn"
+                     data-bs-dismiss="modal"
+                     aria-label="Close"
+                  >
+                     <i class="fal fa-times"></i>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <form action="">
+                     <div class="row g-4">
+                        <div class="input-box col-12">
+                           <input
+                              class="form-control"
+                              type="text"
+                              placeholder="HLAKSJDFKLJL453"
+                           />
+                        </div>
+                        <div class="input-box col-12">
+                           <select class="form-select">
+                              <option selected>BTC</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                           </select>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <div class="modal-footer">
+                  <button
+                     type="button"
+                     class="btn-ico btn2"
+                     data-bs-dismiss="modal"
+                  >
+                     Close
+                  </button>
+                  <button type="button" class="btn-ico">Save changes</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- footer section -->
+      <footer class="footer-section">
+         <div class="container">
+            <div class="row gy-5 g-md-5">
+               <div class="col-lg-3 col-md-6">
+                  <div class="box box1">
+                     <a class="navbar-brand" href="index.html">Exchanger.</a>
+                     <p>
+                        Lorem ipsum dolor sit amet Quis non, <br />
+                        consectetur adipisicing elit.<br />
+                        Fugit totam vel laboriosam vitae.
+                     </p>
+                     <div class="social-links">
+                        <a href="facebook.com">
+                           <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="facebook.com">
+                           <i class="fab fa-youtube"></i>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6 ps-lg-5">
+                  <div class="box">
+                     <h5>useful links</h5>
+                     <ul class="links">
+                        <li><a href="">All NFTs</a></li>
+                        <li><a href="">How It Works</a></li>
+                        <li><a href="">Create</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">Privacy & Terms</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="box">
+                     <h5>Community</h5>
+                     <ul class="links">
+                        <li><a href="">Help Center</a></li>
+                        <li><a href="">Partners</a></li>
+                        <li><a href="">Suggestions</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Newsletter</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="box">
+                     <h5>subscribe newsletter</h5>
+                     <div class="input-group">
+                        <input
+                           type="email"
+                           class="form-control"
+                           placeholder="Enter email"
+                        />
+                        <button><i class="fal fa-paper-plane"></i></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="d-flex copyright justify-content-between">
+               <div>
+                  <span>
+                     All rights reserved © 2022 by<a href="">Bug Finder</a>
+                  </span>
+               </div>
+               <div>
+                  <a href="" class="language">Bengali</a>
+                  <a href="" class="language">English</a>
+                  <a href="" class="language">Spanish</a>
+                  <a href="" class="language">German</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- bootstrap -->
+      <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
+      <script src="./assets/bootstrap/masonry.pkgd.min.js"></script>
+      <!-- jquery cdn -->
+      <script src="./assets/jquery/jquery-3.6.0.min.js"></script>
+      <!-- owl carousel -->
+      <script src="./assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+      <!-- counter up -->
+      <script src="./assets/plugins/counterup/jquery.waypoints.min.js"></script>
+      <script src="./assets/plugins/counterup/jquery.counterup.min.js"></script>
+      <!-- aos animation -->
+      <script src="./assets/plugins/aos/aos.js"></script>
+      <!-- fancy box -->
+      <script src="./assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+      <!-- custom script -->
+      <script src="./js/script.js"></script>
+   </body>
+</html>

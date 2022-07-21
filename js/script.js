@@ -1,10 +1,10 @@
-// // pre loader
-// const preloader = document.getElementById("preloader");
-// window.addEventListener("load", () => {
-//    setTimeout(() => {
-//       preloader.style.cssText = `opacity: 0; visibility: hidden;`;
-//    }, 1000);
-// });
+// pre loader
+const preloader = document.getElementById("preloader");
+window.addEventListener("load", () => {
+   setTimeout(() => {
+      preloader.style.cssText = `opacity: 0; visibility: hidden;`;
+   }, 1000);
+});
 
 // add bg to nav
 window.addEventListener("scroll", function () {
@@ -48,15 +48,11 @@ for (const element of navItem) {
 //    });
 // }
 
-// const previewImage = (id) => {
-//    document.getElementById(id).src = URL.createObjectURL(event.target.files[0]);
-// };
-
 $(document).ready(function () {
    $(".testimonials").owlCarousel({
       loop: true,
       margin: 25,
-      nav: true,
+      nav: false,
       dots: true,
       autoplay: true,
       autoplayTimeout: 3000,
@@ -74,13 +70,13 @@ $(document).ready(function () {
    });
 
    // AOS ANIMATION
-   AOS.init();
+   // AOS.init();
 
    // COUNTER UP
-   $(".counter").counterUp({
-      delay: 10,
-      time: 3000,
-   });
+   // $(".counter").counterUp({
+   //    delay: 10,
+   //    time: 3000,
+   // });
 
    // SCROLL TOP
    $(".scroll-up").fadeOut();
@@ -92,3 +88,6 @@ $(document).ready(function () {
       }
    });
 });
+const previewImage = (id) => {
+   document.getElementById(id).src = URL.createObjectURL(event.target.files[0]);
+};

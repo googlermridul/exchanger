@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/x-icon" href="./img/fav.png" />
-      <title>Exchanger | Blogs</title>
+      <title>Exchanger | Home</title>
       <!-- bootstrap 5 -->
       <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" />
       <!-- owl carousel -->
@@ -30,7 +30,7 @@
       <!-- custom css -->
       <link rel="stylesheet" href="./scss/style.css" />
    </head>
-   <body>
+   <body >
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container-fluid">
@@ -52,12 +52,10 @@
                      <a class="nav-link active" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
+                     <a class="nav-link " href="about.html">About</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="exchange-rate.html"
-                        >Exchange rate</a
-                     >
+                     <a class="nav-link" href="buy-sell-rate">Buy & sell rate</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="reserve.html">Bank Reserve</a>
@@ -149,158 +147,188 @@
             <div class="row">
                <div class="col">
                   <div class="header-text text-center">
-                     <h2>Latest News Update</h2>
+                     <h2>frequently asked questions</h2>
                   </div>
                </div>
             </div>
          </div>
       </section>
 
-      <!-- blog details -->
-      <section class="blog-details blog-list">
+      <!-- faq section -->
+      <div class="faq-section">
          <div class="container">
-            <div class="row gy-5 g-lg-5">
-               <div class="col-lg-8">
-                  <div class="blog-box row">
-                     <div class="col-md-6 img-box">
-                        <img
-                           src="./img/blog/blog3.jpg"
-                           class="img-fluid"
-                           alt=""
-                        />
-                     </div>
-                     <div class="col-md-6 text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
-                        </a>
-                        <div class="date-author">
-                           <span class="author">
-                              <i class="fas fa-dot-circle"></i>Moderator
-                           </span>
-                           <span class="float-end">20 January 2021</span>
-                        </div>
-                        <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Alias pariatur eum fuga corporis aperiam sit.
-                        </p>
-                        <a href="blog-details.html" class="read-more"
-                           >Read more</a
+               <div class="col-12">
+                  <div class="accordion" id="accordionExample">
+                     <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingOne">
+                           <button
+                              class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne"
+                              aria-expanded="true"
+                              aria-controls="collapseOne"
+                           >
+                              What does NFT stand mean?
+                           </button>
+                        </h5>
+                        <div
+                           id="collapseOne"
+                           class="accordion-collapse collapse show"
+                           aria-labelledby="headingOne"
+                           data-bs-parent="#accordionExample"
                         >
-                     </div>
-                  </div>
-                  <div class="blog-box row">
-                     <div class="col-md-6 img-box">
-                        <img
-                           src="./img/blog/blog1.jpg"
-                           class="img-fluid"
-                           alt=""
-                        />
-                     </div>
-                     <div class="col-md-6 text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
-                        </a>
-                        <div class="date-author">
-                           <span class="author">
-                              <i class="fas fa-dot-circle"></i>Moderator
-                           </span>
-                           <span class="float-end">20 January 2021</span>
+                           <div class="accordion-body">
+                              This is the first item's accordion body. It is
+                              shown by default, until the collapse plugin adds
+                              the appropriate classes that we use to style each
+                              element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the accordion-body though the
+                              transition does limit overflow.
+                           </div>
                         </div>
-                        <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Alias pariatur eum fuga corporis aperiam sit.
-                        </p>
-                        <a href="blog-details.html" class="read-more"
-                           >Read more</a
+                     </div>
+                     <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingTwo">
+                           <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="collapseTwo"
+                           >
+                              What is the point of NFT?
+                           </button>
+                        </h5>
+                        <div
+                           id="collapseTwo"
+                           class="accordion-collapse collapse"
+                           aria-labelledby="headingTwo"
+                           data-bs-parent="#accordionExample"
                         >
-                     </div>
-                  </div>
-                  <div class="blog-box row">
-                     <div class="col-md-6 img-box">
-                        <img
-                           src="./img/blog/blog2.jpg"
-                           class="img-fluid"
-                           alt=""
-                        />
-                     </div>
-                     <div class="col-md-6 text-box">
-                        <span class="category">Learn and earn</span>
-                        <a href="blog-details.html" class="title">
-                           Learn about UI8 coin and earn an All-Access Pass
-                        </a>
-                        <div class="date-author">
-                           <span class="author">
-                              <i class="fas fa-dot-circle"></i>Moderator
-                           </span>
-                           <span class="float-end">20 January 2021</span>
+                           <div class="accordion-body">
+                              This is the second item's accordion body. It is
+                              hidden by default, until the collapse plugin adds
+                              the appropriate classes that we use to style each
+                              element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the accordion-body though the
+                              transition does limit overflow.
+                           </div>
                         </div>
-                        <p>
-                           Lorem ipsum dolor sit amet consectetur adipisicing
-                           elit. Alias pariatur eum fuga corporis aperiam sit.
-                        </p>
-                        <a href="blog-details.html" class="read-more"
-                           >Read more</a
+                     </div>
+                     <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingThree">
+                           <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree"
+                              aria-expanded="false"
+                              aria-controls="collapseThree"
+                           >
+                              What does it mean to buy a NFT?
+                           </button>
+                        </h5>
+                        <div
+                           id="collapseThree"
+                           class="accordion-collapse collapse"
+                           aria-labelledby="headingThree"
+                           data-bs-parent="#accordionExample"
                         >
-                     </div>
-                  </div>
-                  <nav aria-label="Page navigation example">
-                     <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                           <a class="page-link">Previous</a>
-                        </li>
-                        <li class="page-item active">
-                           <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                           <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                           <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                           <a class="page-link" href="#">Next</a>
-                        </li>
-                     </ul>
-                  </nav>
-               </div>
-               <div class="col-lg-4">
-                  <div class="side-box">
-                     <form action="">
-                        <h5>Search</h5>
-                        <div class="input-group">
-                           <input
-                              type="email"
-                              class="form-control"
-                              placeholder="search"
-                           />
-                           <button><i class="fal fa-search"></i></button>
+                           <div class="accordion-body">
+                              This is the third item's accordion body. It is
+                              hidden by default, until the collapse plugin adds
+                              the appropriate classes that we use to style each
+                              element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the accordion-body though the
+                              transition does limit overflow.
+                           </div>
                         </div>
-                     </form>
-                  </div>
-                  <div class="side-box">
-                     <h5>categories</h5>
-                     <ul class="links">
-                        <li><a href="">Albums</a></li>
-                        <li><a href="">Dress</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Festivals</a></li>
-                     </ul>
-                  </div>
-                  <div class="side-box">
-                     <h5>tags</h5>
-                     <ul class="links">
-                        <li><a href="">Albums</a></li>
-                        <li><a href="">Dress</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Festivals</a></li>
-                     </ul>
+                     </div>
+                     <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingFour">
+                           <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour"
+                              aria-expanded="false"
+                              aria-controls="collapseFour"
+                           >
+                              What does it mean to buy a NFT?
+                           </button>
+                        </h5>
+                        <div
+                           id="collapseFour"
+                           class="accordion-collapse collapse"
+                           aria-labelledby="headingFour"
+                           data-bs-parent="#accordionExample"
+                        >
+                           <div class="accordion-body">
+                              This is the third item's accordion body. It is
+                              hidden by default, until the collapse plugin adds
+                              the appropriate classes that we use to style each
+                              element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the accordion-body though the
+                              transition does limit overflow.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h5 class="accordion-header" id="headingFive">
+                           <button
+                              class="accordion-button collapsed"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseFive"
+                              aria-expanded="false"
+                              aria-controls="collapseFive"
+                           >
+                              What does it mean to buy a NFT?
+                           </button>
+                        </h5>
+                        <div
+                           id="collapseFive"
+                           class="accordion-collapse collapse"
+                           aria-labelledby="headingFive"
+                           data-bs-parent="#accordionExample"
+                        >
+                           <div class="accordion-body">
+                              This is the third item's accordion body. It is
+                              hidden by default, until the collapse plugin adds
+                              the appropriate classes that we use to style each
+                              element. These classes control the overall
+                              appearance, as well as the showing and hiding via
+                              CSS transitions. You can modify any of this with
+                              custom CSS or overriding our default variables.
+                              It's also worth noting that just about any HTML
+                              can go within the accordion-body though the
+                              transition does limit overflow.
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-      </section>
+      </div>
 
       <!-- footer section -->
       <footer class="footer-section">
